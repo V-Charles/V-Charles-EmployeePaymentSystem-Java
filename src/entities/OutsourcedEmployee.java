@@ -21,4 +21,9 @@ public class OutsourcedEmployee extends Employee{
     public void setAdditionalCharge(Double additionalCharge) {
         this.additionalCharge = additionalCharge;
     }
+    
+    @Override
+    public Double payment(){
+        return super.payment() + additionalCharge * 1.1;
+    }
 }
